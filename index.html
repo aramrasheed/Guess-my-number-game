@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <meta name="theme-color" content="#071a2f" />
+
+    <title>Guess My Number!</title>
+
+    <!-- Link the CSS stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Load JavaScript after the HTML has been parsed -->
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+<!-- DESIGNER POP-UP -->
+<div class="designer-popup" id="designerPopup" role="dialog"
+     aria-modal="true" aria-labelledby="designerTitle">
+
+  <div class="popup-content">
+
+    <div class="popup-icon">🎮</div>
+
+    <h2 id="designerTitle">Welcome, Player!</h2>
+
+    <p class="popup-description">
+      Welcome to <strong>Guess My Number!</strong>
+    </p>
+
+    <div class="designer-divider"></div>
+
+    <p class="designed-by">Proudly Designed By</p>
+
+    <h3 class="designer-name">COMRADE ARAMIDE</h3>
+
+    <p class="popup-message">
+      Think smart, guess wisely, and have fun!
+    </p>
+
+    <button class="btn popup-start" id="popupStart" type="button">
+      Let's Play! 🚀
+    </button>
+
+    <button class="popup-close" id="popupClose"
+            type="button" aria-label="Close welcome message">
+      &times;
+    </button>
+
+  </div>
+</div>
+
+    <!-- HEADER -->
+    <header>
+      <button class="btn again" type="button">
+        🔄 Play Again!
+      </button>
+
+      <p class="between">Between 1 and 20</p>
+
+      <h1>Guess My Number!</h1>
+
+      <div class="number">?</div>
+    </header>
+
+    <!-- MAIN GAME AREA -->
+    <main>
+      <!-- LEFT SECTION: PLAYER INPUT -->
+      <section class="left">
+        <h2>Enter your guess</h2>
+
+        <label class="visually-hidden" for="guess">
+          Enter a number between 1 and 20
+        </label>
+
+        <input
+          type="number"
+          id="guess"
+          class="guess"
+          min="1"
+          max="20"
+          step="1"
+          inputmode="numeric"
+          placeholder="?"
+        />
+
+        <button class="btn check" type="button">
+          ✓ Check!
+        </button>
+      </section>
+
+      <!-- RIGHT SECTION: GAME INFORMATION -->
+      <section class="right">
+        <p class="message" aria-live="polite">
+          Start guessing...
+        </p>
+
+        <p class="label-score">
+          <span>💯 Score</span>
+          <span class="score">5</span>
+        </p>
+
+        <p class="label-highscore">
+          <span>🏆 Highscore</span>
+          <span class="highscore">0</span>
+        </p>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+<footer>
+  <p>Think smart. Guess wisely. Good luck! 🍀</p>
+
+  <p class="feedback-text">
+    Enjoyed the game? Help COMRADE ARAMIDE improve it!
+  </p>
+
+  <a
+    class="feedback-button"
+    href="https://docs.google.com/forms/d/e/1FAIpQLSfLYYfw6KLON6b4T5hWDnSrNf67kOBP0-VKnFdQKa1P82NotQ/viewform?usp=header"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    📝 Give Feedback
+  </a>
+</footer>  </body>
+</html>
+
+
+
